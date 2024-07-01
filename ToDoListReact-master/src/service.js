@@ -1,6 +1,6 @@
 import axios from 'axios';
 import config from './config';
-const apiUrl = config.apiUrl;
+const apiUrl = "https://todolistserverayalaku.onrender.com";
 
 const responseInterceptor = axios.interceptors.response.use(
   (response) => {

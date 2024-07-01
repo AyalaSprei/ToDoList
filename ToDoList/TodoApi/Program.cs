@@ -22,11 +22,11 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 app.UseCors("myAppCors");
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.MapGet("/items", async (ToDoDbContext dbContext) =>
 {
@@ -85,4 +85,5 @@ app.MapDelete("/items/{id}", async (int id, ToDoDbContext dbContext) =>
         return Results.NotFound($"Item with ID {id} not found");
     }
 });
+app.MapGet("/", ()=>"running!");
 app.Run();

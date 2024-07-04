@@ -14,7 +14,7 @@ const responseInterceptor = axios.interceptors.response.use(
 
 export default {
   getTasks: async () => {
-    const result = await axios.get('https://todolistserverayalaku.onrender.com/items')    
+    const result = await axios.get(`${apiUrl}/items`)    
     return result.data;
   },
 

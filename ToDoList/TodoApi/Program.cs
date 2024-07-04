@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("myAppCors", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("https://todolistayala.onrender.com")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
     });

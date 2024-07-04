@@ -1,6 +1,6 @@
 import axios from 'axios';
 import config from './config';
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = "https://todolistserverayalaku.onrender.com";
 console.log('API URL:', apiUrl);
 
 const responseInterceptor = axios.interceptors.response.use(

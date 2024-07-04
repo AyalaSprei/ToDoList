@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: process.env.REACT_APP_API_URL, // Default API URL
+    apiUrl: "https://todolistserverayalaku.onrender.com", // Default API URL
   };
   
   export default config;
